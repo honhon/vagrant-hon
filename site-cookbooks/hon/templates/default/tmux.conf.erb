@@ -1,0 +1,13 @@
+set-window-option -g utf8 on
+set-option -g history-limit 5000
+set-option -g default-terminal "screen-256color"
+set -g status-fg cyan
+set -g status-bg black
+set -g status-left-length 30
+set -g status-left '#[fg=white,bg=black]#H#[default]'
+set -g status-right '#[fg=black,bg=cyan,bold] [%Y-%m-%d(%a) %H:%M]#[default]'
+setw -g window-status-current-fg black
+setw -g window-status-current-bg cyan
+setw -g window-status-current-attr bold#,underscore
+
+#ruby version info: <%= node[:languages][:ruby][:version] %>
